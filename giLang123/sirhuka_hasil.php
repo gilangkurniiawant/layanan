@@ -14,7 +14,6 @@
 
     <?php
     session_start();
-    require_once('../modul/koneksi.php');
     $kode = @$_POST['kode'] ? $_POST['kode'] : '';
     $jumlah = @$_POST['jumlah'] ? $_POST['jumlah'] : '';
     $hasil = array();
@@ -52,13 +51,6 @@ if ($_SESSION['request'] == 'no') {
     die();
 }
 */
-    if ($isi = cek_order($kode)) {
-        echo "<center>Data Sudah Ada</center>";
-
-        while ($d = mysqli_fetch_array($isi)) {
-            $dts .= "Username : " . $d['user'] . "\nPassword : " . $d['password'] . "\n";
-        }
-    } else {
 
         for ($x = 1; $x <= $jumlah; $x++) {
             $hasil[] = order($kode);
@@ -67,7 +59,7 @@ if ($_SESSION['request'] == 'no') {
         foreach ($hasil as $d) {
             $dts .= "Username : " . $d[0] . "\nPassword : " . $d[1] . "\n\n";
         }
-    }
+    
 
     date_default_timezone_set("Asia/Jakarta");
     $ex = date("d-m-Y", time());
