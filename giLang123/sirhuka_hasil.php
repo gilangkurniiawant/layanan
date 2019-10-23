@@ -94,7 +94,7 @@ Terimakasih.";
     <div class="container">
 
         <div class="form-group">
-            <a class="btn btn-success" onclick="copyU()">Copy</a> <a style="float:right" ; class="btn btn-primary" href="https://sirhuka.000webhostapp.com/giLang123/index.php">Kembali</a>
+            <a class="btn btn-success" onclick="copyU()">Copy</a> <a style="float:right" ; class="btn btn-primary" href="http://order.wifi-id.my.id/giLang123/index.php">Kembali</a>
         </div>
         <div class="form-group">
             <textarea class="form-control" id='hasha' rows="20%" cols="80%"><?= $otp ?></textarea>
