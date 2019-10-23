@@ -1,6 +1,6 @@
 <?php
 //$con = mysqli_connect('localhost', 'root', '', 'wifi') or die('Gagal');
-$con = mysqli_connect('localhost', 'id10993138_root', 'giLang123!', 'id10993138_wifi') or die('Gagal');
+//$con = mysqli_connect('localhost', 'id10993138_root', 'giLang123!', 'id10993138_wifi') or die('Gagal');
 
 
 
